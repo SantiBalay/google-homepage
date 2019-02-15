@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///home/santibalay/the_odin_proyect/Tests/someFunctions.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+  <script>
+    'use strict';
+
+    function ask(question, yes, no) {
+      if (confirm(question)) yes()
+      else no();
+    }
+
+    let aFunction = function() {
+      alert("You agreed.");
+    }
+
+    ask("Do you agree?", aFunction, function() { alert("You canceled the execution.");});
+ 
+
+ </script>
+
+
+</body></html>
